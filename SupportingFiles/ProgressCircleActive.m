@@ -6,13 +6,13 @@
 //  Copyright © 2018 CocMap. All rights reserved.
 //
 
-#import "ProgressCircle.h"
+#import "ProgressCircleActive.h"
 
-@implementation ProgressCircle
+@implementation ProgressCircleActive
 
 - (void) didMoveToSuperview {
     self.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-    self->attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Helvetica" size:20], NSFontAttributeName, [UIColor redColor], NSForegroundColorAttributeName, nil];
+    self->attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Helvetica" size:10], NSFontAttributeName, [UIColor redColor], NSForegroundColorAttributeName, nil];
 }
 
 - (void)drawRect:(CGRect)rect {
@@ -66,13 +66,14 @@
     [[UIColor whiteColor] setFill];
     [path fill];
     
+    //rotate text
     tran = CGAffineTransformMakeRotation((75)*M_PI/180);
     CGContextConcatCTM(context, tran);
     
     //circle name + text format
     active = @"active";
     
-    NSAttributedString *cur_text = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat: @"%@\n%d%%", active, progressActive] attributes:attributes];
+    NSAttributedString *cur_text = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat: @"%@\n%d%%", active, progressActive] attributes:attributes];	
     
     CGSize text_size = [cur_text size];
     CGRect r = CGRectMake(0+(0-text_size.width)/2, 0+(0-text_size.height)/2, text_size.width, text_size.height);

@@ -8,17 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProgressCircle : UIView {
+@interface ProgressCircleActive : UIView {
     NSDictionary *attributes;
     
     @public
     NSString *active;
-    NSString *working;
-    NSString *relax;
-    
+
     int progressActive;
-    int progressWorking;
-    int progressRelax;
 }
 
 @end

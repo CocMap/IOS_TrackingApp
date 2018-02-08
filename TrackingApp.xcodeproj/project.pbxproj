@@ -14,9 +14,16 @@
 		D30F4AB4201CA54900741079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30F4AB2201CA54900741079 /* LaunchScreen.storyboard */; };
 		D30F4ABF201CA54A00741079 /* TrackingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ABE201CA54A00741079 /* TrackingAppTests.swift */; };
 		D30F4ACA201CA54A00741079 /* TrackingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F4AC9201CA54A00741079 /* TrackingAppUITests.swift */; };
-		D30F4ADF201CB03E00741079 /* ProgresssCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ADE201CB03E00741079 /* ProgresssCircle.m */; };
-		D34A36C0201CD660000BBCF9 /* ProgresssCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ADE201CB03E00741079 /* ProgresssCircle.m */; };
-		D34A36C1201CD660000BBCF9 /* ProgresssCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ADE201CB03E00741079 /* ProgresssCircle.m */; };
+		D30F4ADF201CB03E00741079 /* ProgressCircleActive.m in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */; };
+		D333FDDE2026D3E700816B6F /* ProgressBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D333FDDD2026D3E700816B6F /* ProgressBarCollectionViewCell.swift */; };
+		D34A36C0201CD660000BBCF9 /* ProgressCircleActive.m in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */; };
+		D34A36C1201CD660000BBCF9 /* ProgressCircleActive.m in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */; };
+		D3610AA82026351F0011E5CA /* ProgressCircleWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = D3610AA72026351F0011E5CA /* ProgressCircleWorking.m */; };
+		D3610AA9202635280011E5CA /* ProgressCircleWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = D3610AA72026351F0011E5CA /* ProgressCircleWorking.m */; };
+		D3610AAA202635280011E5CA /* ProgressCircleWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = D3610AA72026351F0011E5CA /* ProgressCircleWorking.m */; };
+		D3610AAD202636100011E5CA /* ProgressCircleRelax.m in Sources */ = {isa = PBXBuildFile; fileRef = D3610AAC202636100011E5CA /* ProgressCircleRelax.m */; };
+		D3610AAE202636140011E5CA /* ProgressCircleRelax.m in Sources */ = {isa = PBXBuildFile; fileRef = D3610AAC202636100011E5CA /* ProgressCircleRelax.m */; };
+		D3610AAF202636140011E5CA /* ProgressCircleRelax.m in Sources */ = {isa = PBXBuildFile; fileRef = D3610AAC202636100011E5CA /* ProgressCircleRelax.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +58,13 @@
 		D30F4AC9201CA54A00741079 /* TrackingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingAppUITests.swift; sourceTree = "<group>"; };
 		D30F4ACB201CA54A00741079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D30F4AD9201CAFB900741079 /* TrackingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrackingApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		D30F4ADD201CB03E00741079 /* ProgressCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressCircle.h; sourceTree = "<group>"; };
-		D30F4ADE201CB03E00741079 /* ProgresssCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgresssCircle.m; sourceTree = "<group>"; };
+		D30F4ADD201CB03E00741079 /* ProgressCircleActive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressCircleActive.h; sourceTree = "<group>"; };
+		D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressCircleActive.m; sourceTree = "<group>"; };
+		D333FDDD2026D3E700816B6F /* ProgressBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3610AA62026351F0011E5CA /* ProgressCircleWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressCircleWorking.h; sourceTree = "<group>"; };
+		D3610AA72026351F0011E5CA /* ProgressCircleWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressCircleWorking.m; sourceTree = "<group>"; };
+		D3610AAB202636100011E5CA /* ProgressCircleRelax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressCircleRelax.h; sourceTree = "<group>"; };
+		D3610AAC202636100011E5CA /* ProgressCircleRelax.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressCircleRelax.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,7 @@
 			children = (
 				D30F4AA9201CA54900741079 /* AppDelegate.swift */,
 				D30F4AAB201CA54900741079 /* ViewController.swift */,
+				D333FDDD2026D3E700816B6F /* ProgressBarCollectionViewCell.swift */,
 				D30F4AAD201CA54900741079 /* Main.storyboard */,
 				D30F4AB0201CA54900741079 /* Assets.xcassets */,
 				D30F4AB2201CA54900741079 /* LaunchScreen.storyboard */,
@@ -136,8 +149,12 @@
 		D30F4AE0201CB08100741079 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				D30F4ADD201CB03E00741079 /* ProgressCircle.h */,
-				D30F4ADE201CB03E00741079 /* ProgresssCircle.m */,
+				D3610AAB202636100011E5CA /* ProgressCircleRelax.h */,
+				D3610AAC202636100011E5CA /* ProgressCircleRelax.m */,
+				D3610AA62026351F0011E5CA /* ProgressCircleWorking.h */,
+				D3610AA72026351F0011E5CA /* ProgressCircleWorking.m */,
+				D30F4ADD201CB03E00741079 /* ProgressCircleActive.h */,
+				D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -278,8 +295,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30F4AAC201CA54900741079 /* ViewController.swift in Sources */,
-				D30F4ADF201CB03E00741079 /* ProgresssCircle.m in Sources */,
+				D30F4ADF201CB03E00741079 /* ProgressCircleActive.m in Sources */,
+				D3610AA82026351F0011E5CA /* ProgressCircleWorking.m in Sources */,
+				D3610AAD202636100011E5CA /* ProgressCircleRelax.m in Sources */,
 				D30F4AAA201CA54900741079 /* AppDelegate.swift in Sources */,
+				D333FDDE2026D3E700816B6F /* ProgressBarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34A36C0201CD660000BBCF9 /* ProgresssCircle.m in Sources */,
+				D34A36C0201CD660000BBCF9 /* ProgressCircleActive.m in Sources */,
 				D30F4ABF201CA54A00741079 /* TrackingAppTests.swift in Sources */,
+				D3610AA9202635280011E5CA /* ProgressCircleWorking.m in Sources */,
+				D3610AAE202636140011E5CA /* ProgressCircleRelax.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34A36C1201CD660000BBCF9 /* ProgresssCircle.m in Sources */,
+				D34A36C1201CD660000BBCF9 /* ProgressCircleActive.m in Sources */,
 				D30F4ACA201CA54A00741079 /* TrackingAppUITests.swift in Sources */,
+				D3610AAA202635280011E5CA /* ProgressCircleWorking.m in Sources */,
+				D3610AAF202636140011E5CA /* ProgressCircleRelax.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
