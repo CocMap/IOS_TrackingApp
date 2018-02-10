@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet weak var activeLabel: UILabel!
+    @IBOutlet weak var workingLabel: UILabel!
+    @IBOutlet weak var relaxingLabel: UILabel!
+    
+    
     @IBOutlet var collectionView: UICollectionView!
     
-    let mainMenu = ["phone/tablet", "tivi", "computer screen", "sport/exercise", "driving",
-                    "sleeping", "sitting", "tivi", "computer screen", "sport/exercise", "driving",
-                    "tivi", "computer screen", "sport/exercise", "driving"]
+    let activities = ["Phone", "Tablet", "Intel", "Tennis", "Driving", "Sleeping", "Sitting"]
     
-    let totalTime = ["1H 16M", "1H 16M", "1H 16M", "1H 16M", "1H 16M", "1H 16M", "1H 16M", "1H 16M",
-                     "1H 16M", "1H 16M", "1H 16M", "1H 16M", "1H 16M", "1H 16M", "1H 16M"]
+    let totalTime = ["1H 16M", "2H 10M", "8H", "2H 10M", "32M", "8H 30M", "35M"]
 
     override func viewDidLoad() {
         
@@ -29,22 +32,35 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             layout.scrollDirection = .vertical
         }
         
+        customProgressLabel()
+        
         super.viewDidLoad()
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return mainMenu.count
+        return activities.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "progressBarCell", for: indexPath) as! ProgressBarCollectionViewCell
         
-        cell.labelCell.text = mainMenu[indexPath.row].capitalized
+        cell.labelCell.text = activities[indexPath.row].capitalized
         cell.backgroundColor =  UIColor.green.withAlphaComponent(0.2)
         
         cell.totalTimeCell.text = totalTime[indexPath.row]
         
         return cell
+    }
+    
+    func customProgressLabel() {
+        activeLabel.layer.masksToBounds = true
+        activeLabel.layer.cornerRadius = 10
+        
+        workingLabel.layer.masksToBounds = true
+        workingLabel.layer.cornerRadius = 10
+        
+        relaxingLabel.layer.masksToBounds = true
+        relaxingLabel.layer.cornerRadius = 10
     }
 
 

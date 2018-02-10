@@ -16,6 +16,12 @@
 		D30F4ACA201CA54A00741079 /* TrackingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F4AC9201CA54A00741079 /* TrackingAppUITests.swift */; };
 		D30F4ADF201CB03E00741079 /* ProgressCircleActive.m in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */; };
 		D333FDDE2026D3E700816B6F /* ProgressBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D333FDDD2026D3E700816B6F /* ProgressBarCollectionViewCell.swift */; };
+		D3494911202F468500C5DF95 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3494910202F468500C5DF95 /* Activity.swift */; };
+		D3494913202F48C900C5DF95 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3494912202F48C900C5DF95 /* ActivityType.swift */; };
+		D3494915202F52CA00C5DF95 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3494914202F52CA00C5DF95 /* SettingsCell.swift */; };
+		D3494917202F530100C5DF95 /* ManagedActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3494916202F530100C5DF95 /* ManagedActivityCell.swift */; };
+		D349491F202F5C5900C5DF95 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349491E202F5C5900C5DF95 /* SettingsVC.swift */; };
+		D3494923202F636700C5DF95 /* ManagedActivityTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3494922202F636700C5DF95 /* ManagedActivityTableVC.swift */; };
 		D34A36C0201CD660000BBCF9 /* ProgressCircleActive.m in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */; };
 		D34A36C1201CD660000BBCF9 /* ProgressCircleActive.m in Sources */ = {isa = PBXBuildFile; fileRef = D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */; };
 		D3610AA82026351F0011E5CA /* ProgressCircleWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = D3610AA72026351F0011E5CA /* ProgressCircleWorking.m */; };
@@ -61,6 +67,12 @@
 		D30F4ADD201CB03E00741079 /* ProgressCircleActive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressCircleActive.h; sourceTree = "<group>"; };
 		D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressCircleActive.m; sourceTree = "<group>"; };
 		D333FDDD2026D3E700816B6F /* ProgressBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3494910202F468500C5DF95 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		D3494912202F48C900C5DF95 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
+		D3494914202F52CA00C5DF95 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		D3494916202F530100C5DF95 /* ManagedActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedActivityCell.swift; sourceTree = "<group>"; };
+		D349491E202F5C5900C5DF95 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		D3494922202F636700C5DF95 /* ManagedActivityTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedActivityTableVC.swift; sourceTree = "<group>"; };
 		D3610AA62026351F0011E5CA /* ProgressCircleWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressCircleWorking.h; sourceTree = "<group>"; };
 		D3610AA72026351F0011E5CA /* ProgressCircleWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressCircleWorking.m; sourceTree = "<group>"; };
 		D3610AAB202636100011E5CA /* ProgressCircleRelax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressCircleRelax.h; sourceTree = "<group>"; };
@@ -95,7 +107,8 @@
 		D30F4A9D201CA54900741079 = {
 			isa = PBXGroup;
 			children = (
-				D30F4AE0201CB08100741079 /* SupportingFiles */,
+				D349490D202F442400C5DF95 /* ClassObject */,
+				D30F4AE0201CB08100741079 /* ProgressCircle */,
 				D30F4AA8201CA54900741079 /* TrackingApp */,
 				D30F4ABD201CA54A00741079 /* TrackingAppTests */,
 				D30F4AC8201CA54A00741079 /* TrackingAppUITests */,
@@ -124,6 +137,10 @@
 				D30F4AB2201CA54900741079 /* LaunchScreen.storyboard */,
 				D30F4AB5201CA54900741079 /* Info.plist */,
 				D30F4AD9201CAFB900741079 /* TrackingApp-Bridging-Header.h */,
+				D3494914202F52CA00C5DF95 /* SettingsCell.swift */,
+				D349491E202F5C5900C5DF95 /* SettingsVC.swift */,
+				D3494916202F530100C5DF95 /* ManagedActivityCell.swift */,
+				D3494922202F636700C5DF95 /* ManagedActivityTableVC.swift */,
 			);
 			path = TrackingApp;
 			sourceTree = "<group>";
@@ -146,7 +163,7 @@
 			path = TrackingAppUITests;
 			sourceTree = "<group>";
 		};
-		D30F4AE0201CB08100741079 /* SupportingFiles */ = {
+		D30F4AE0201CB08100741079 /* ProgressCircle */ = {
 			isa = PBXGroup;
 			children = (
 				D3610AAB202636100011E5CA /* ProgressCircleRelax.h */,
@@ -156,7 +173,16 @@
 				D30F4ADD201CB03E00741079 /* ProgressCircleActive.h */,
 				D30F4ADE201CB03E00741079 /* ProgressCircleActive.m */,
 			);
-			path = SupportingFiles;
+			path = ProgressCircle;
+			sourceTree = "<group>";
+		};
+		D349490D202F442400C5DF95 /* ClassObject */ = {
+			isa = PBXGroup;
+			children = (
+				D3494910202F468500C5DF95 /* Activity.swift */,
+				D3494912202F48C900C5DF95 /* ActivityType.swift */,
+			);
+			path = ClassObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,11 +320,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D349491F202F5C5900C5DF95 /* SettingsVC.swift in Sources */,
 				D30F4AAC201CA54900741079 /* ViewController.swift in Sources */,
 				D30F4ADF201CB03E00741079 /* ProgressCircleActive.m in Sources */,
+				D3494915202F52CA00C5DF95 /* SettingsCell.swift in Sources */,
 				D3610AA82026351F0011E5CA /* ProgressCircleWorking.m in Sources */,
+				D3494917202F530100C5DF95 /* ManagedActivityCell.swift in Sources */,
+				D3494911202F468500C5DF95 /* Activity.swift in Sources */,
+				D3494913202F48C900C5DF95 /* ActivityType.swift in Sources */,
 				D3610AAD202636100011E5CA /* ProgressCircleRelax.m in Sources */,
 				D30F4AAA201CA54900741079 /* AppDelegate.swift in Sources */,
+				D3494923202F636700C5DF95 /* ManagedActivityTableVC.swift in Sources */,
 				D333FDDE2026D3E700816B6F /* ProgressBarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,16 +25,16 @@
     tran = CGAffineTransformRotate(tran, (270)*M_PI/180);
     CGContextConcatCTM(context, tran);
     
+    UIBezierPath *path=[UIBezierPath bezierPath];
     
     //large circle
     //int progress;
     progressRelax = 70;     //counter 0-100
     int limitInRadius = 60;
-    
-    UIBezierPath *path=[UIBezierPath bezierPath];
+
     [path setLineWidth:2];
     [path moveToPoint:CGPointMake(0, 0)];
-    [path addArcWithCenter:CGPointMake(0, 0) radius:50 startAngle:0 endAngle:(progressRelax*3.6)*M_PI/180 clockwise:true];
+    [path addArcWithCenter:CGPointMake(0, 0) radius:50 startAngle:0 endAngle:(70*3.6)*M_PI/180 clockwise:true];
     [path closePath];
     [[UIColor greenColor] setFill];
     [path fill];
